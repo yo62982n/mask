@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>쌈마이한 마스크 파인더</title>
+    <script src="https://kit.fontawesome.com/525c3a3410.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav>
+      <div>
+        쌈마이한 마스크 파인더
+      </div>
+      <div class="my-location">
+
+      </div>
+    </nav>
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=y8dbhsf9s6"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=y8dbhsf9s6&submodules=geocoder"></script>
+
+    <div class="store-overlay">
+      <div class="store">
+        <span class="close-store">
+          <i class="fa fa-window-close"></i>
+        </span>
+        <h2 class="store-name"></h2>
+        <div class="store-content">
+
+        </div>
+      </div>
+    </div>
+    <div class="indicator"><h3>주소 검색</h3></div>
+    <div class="location-finder">
+      <form>
+        <input type="text" name="addr" />
+        <button class="searchBtn"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <div class="current-location">
+      <h3></h3>
+    </div>
+    <div class="legend">
+      <p>범례 : 
+        <i class="fas fa-map-marker grey"></i>  1개 이하
+        <i class="fas fa-map-marker red"></i> 2 ~ 29개
+        <i class="fas fa-map-marker yellow"></i> 30 ~ 100개
+        <i class="fas fa-map-marker green"></i> 100개 이상
+      </p>
+    </div>
+    <div id="nmap"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
